@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="highlight">#f76400</color>
+    <color name="highlightable">#fff6eb</color>
+    <color name="light_background">#FFFFFFFF</color>
+    <color name="dark_background">#080E1E</color>
+    <color name="accent">#410fa3</color>
+    <color name="active">#5b7bfe</color>
+    <color name="caution">#d6185d</color>
+    <color name="correct">#5ba890</color>
+    <color name="q20">#080E1E</color>
+    <color name="light_header">#080E1E</color>
+    <color name="light_text">#080E1E</color>
+    <color name="dark_header">#FFFFFF</color>
+</resources>

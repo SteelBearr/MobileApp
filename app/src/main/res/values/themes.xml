@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.LangLearn" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorOnBackground">@color/dark_background</item>
+        <item name="colorPrimary">@color/dark_header</item>
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.LangLearn" parent="Base.Theme.LangLearn" />
+    <style name="Theme.LangLearn.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/accent</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.LangLearn</item>
+    </style>>
+</resources>

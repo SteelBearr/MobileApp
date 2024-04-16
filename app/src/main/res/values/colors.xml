@@ -10,8 +10,9 @@
     <color name="active">#5b7bfe</color>
     <color name="caution">#d6185d</color>
     <color name="correct">#5ba890</color>
-    <color name="q20">#080E1E</color>
+    <color name="q20">#33080E1E</color>
     <color name="light_header">#080E1E</color>
     <color name="light_text">#080E1E</color>
     <color name="dark_header">#FFFFFF</color>
+    <color name="q60">#99080E1E</color>
 </resources>

@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">LangLearn</string>
+    <string name="onboardingHeader1">Confidence in your words</string>
+    <string name="onboardingHeader2">Take your time to learn</string>
+    <string name="onboardingHeader3">The lessons you need to learn</string>
+    <string name="onboardingText1">With conversation-based learning, you\'ll be talking from lesson one</string>
+    <string name="onboardingText2">Develop a habit of learning and make it a part of your daily routine</string>
+    <string name="onboardingText3">Using a variety of learning styles to learn and retain</string>
+    <string name="onboardingButtonText1">Next</string>
+    <string name="onboardingButtonText2">More</string>
+    <string name="onboardingButtonText3">Choose a language</string>
+    <string name="onboardingSkip">Skip onboarding</string>
 </resources>

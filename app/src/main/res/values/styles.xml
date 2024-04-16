@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="activeButton">
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/fredoka_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/active</item>
+        <item name="android:background">@drawable/active_btn</item>
+    </style>
+</resources>

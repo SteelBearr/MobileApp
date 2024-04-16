@@ -6,20 +6,37 @@
     android:layout_height="match_parent">
     <ImageView
         android:id="@+id/idIVImage"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="240dp"
+        android:layout_height="220dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="147dp"
         />
 
-    <me.relex.circleindicator.CircleIndicator
-        android:id="@+id/indicator"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="263dp"
+        android:layout_height="28dp"
         android:layout_below="@+id/idIVImage"
-        android:layout_marginTop="115dp"
-        android:background="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_centerHorizontal="true"
+        android:textSize="22sp"
+        android:layout_marginTop="163dp"
+        android:textColor="@color/dark_background"
+        android:textAlignment="center"
+        android:fontFamily="@font/fredoka_semibold"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/text"
+        android:textColor="@color/q60"
+        android:layout_width="263dp"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:layout_height="40dp"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/fredoka_regular"
+        android:text="" />
+
+
 </RelativeLayout>

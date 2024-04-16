@@ -6,12 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.RelativeLayout
+import android.widget.TextView
 import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
 import me.relex.circleindicator.CircleIndicator
 import java.util.*
 
-class ViewPagerAdapter(val context: Context, val imageList: List<Int>) : PagerAdapter() {
+class ViewPagerAdapter(val context: Context, val imageList: List<Int>, val headerList: List<String>, val textList: List<String>) : PagerAdapter() {
     lateinit var indicator : CircleIndicator
     // on below line we are creating a method
     // as get count to return the size of the list.
@@ -40,10 +41,13 @@ class ViewPagerAdapter(val context: Context, val imageList: List<Int>) : PagerAd
         // on below line we are initializing
         // our image view with the id.
         val imageView: ImageView = itemView.findViewById<View>(R.id.idIVImage) as ImageView
-
+        val headerView: TextView = itemView.findViewById<View>(R.id.header) as TextView
+        val textView: TextView = itemView.findViewById<View>(R.id.text) as TextView
         // on below line we are setting
         // image resource for image view.
         imageView.setImageResource(imageList.get(position))
+        headerView.text = headerList.get(position)
+        textView.text = textList.get(position)
 
         // on the below line we are adding this
         // item view to the container.

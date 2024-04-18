@@ -50,5 +50,6 @@ dependencies {
     implementation("me.relex:circleindicator:2.1.6")
     implementation("com.makeramen:roundedimageview:2.3.0")
     implementation("com.squareup.picasso:picasso:2.8")
+    implementation("com.oginotihiro:cropview:1.0.0")
 
 }

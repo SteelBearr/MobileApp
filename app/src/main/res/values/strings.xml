@@ -87,4 +87,7 @@
     <string name="wordsItem3_4">Стремительный</string>
     <string name="gameYou">You</string>
     <string name="gameOpponent">P2</string>
+    <string name="imageUse">Use that image</string>
+    <string name="imageHeader">Your photo is gorgeous!</string>
+    <string name="imageHint">Just resize that photo for fit in square</string>
 </resources>

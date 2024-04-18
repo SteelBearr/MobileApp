@@ -72,6 +72,13 @@ class ProfileActivity : AppCompatActivity() {
                 finish()
             }
         })
+        imageButton.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(view: View) {
+                val intent = Intent(this@ProfileActivity,ChangePhotoActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
+        })
 
     }
 }

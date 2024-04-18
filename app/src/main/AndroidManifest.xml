@@ -13,9 +13,13 @@
         android:theme="@style/Theme.LangLearn.Starting"
         tools:targetApi="31">
         <activity
-            android:name=".GameActivity"
+            android:name=".ChangePhotoActivity"
             android:exported="false"
             android:theme="@style/Theme.LangLearn"/>
+        <activity
+            android:name=".GameActivity"
+            android:exported="false"
+            android:theme="@style/Theme.LangLearn" />
         <activity
             android:name=".WordsActivity"
             android:exported="false"

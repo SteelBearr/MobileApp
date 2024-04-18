@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LanguageSelectorActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/accent">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="78dp"

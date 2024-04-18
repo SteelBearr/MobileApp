@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -20,9 +21,11 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         sharedPreferences = this.getSharedPreferences("myPrefs", Context.MODE_PRIVATE)
         if  (sharedPreferences.getInt("screenId", 0) != -1) {
+
             val intent = Intent(this, OnboardingActivity::class.java)
             startActivity(intent)
         } else {
+            //AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
             val intent = Intent(this, LanguageSelectorActivity::class.java)
             startActivity(intent)
         }

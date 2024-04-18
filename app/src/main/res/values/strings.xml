@@ -42,7 +42,7 @@
     <string name="languageSelectorTitle">Language select</string>
     <string name="languageSelectorHeader">What is your Mother language?</string>
     <string name="languageSelectorButton">Choose</string>
-    <string name="homeGreeting">"Hello, "</string>
+    <string name="homeGreeting">Hello, Mikhail</string>
     <string name="homeHeader">Are you ready for learning today?</string>
     <string name="homeTopUsers">Top users</string>
     <string name="homeExcersises">Available excersises</string>
@@ -50,7 +50,7 @@
     <string name="homeWordPractice">Word practice</string>
     <string name="homeAudition">Audition</string>
     <string name="homeGame">Game</string>
-    <string name="profileHeader">"Your profile, "</string>
+    <string name="profileHeader">Your profile, Mikhail</string>
     <string name="profileTheme">Switch to Dark</string>
     <string name="profileLanguage">Change mother language</string>
     <string name="profileImage">Change your image</string>

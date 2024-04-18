@@ -27,7 +27,7 @@ class GameRecycleViewAdapter(private val itemList: List<GameItem>, private val i
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val currentItem = itemList[position]
         holder.button.text = currentItem.word
-        holder.user.text = currentItem.user
+        holder.user.text = ""
         holder.button.isSelected = currentItem.isSelected
         val context = holder.button.context
         if (currentItem.isWrong) {
@@ -38,8 +38,16 @@ class GameRecycleViewAdapter(private val itemList: List<GameItem>, private val i
         } else {
             holder.button.background = context.getDrawable(R.drawable.word_background)
         }
+        val userLabel = context.getString(R.string.gameYou)
+        val opponentLabel = context.getString(R.string.gameOpponent)
+        if (currentItem.isSelected && currentItem.isOpponentAnswer) {
+            holder.user.text = ""
+        } else if (currentItem.isSelected) {
+            holder.user.text = userLabel
+        } else if (currentItem.isOpponentAnswer) {
+            holder.user.text = opponentLabel
+        }
     }
-
     override fun getItemCount(): Int {
         return itemList.size
     }

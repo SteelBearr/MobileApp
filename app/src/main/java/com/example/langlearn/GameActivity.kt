@@ -38,21 +38,21 @@ class GameActivity : AppCompatActivity() {
         itemList.add(getString(R.string.wordsItem1_2))
         itemList.add(getString(R.string.wordsItem1_3))
         itemList.add(getString(R.string.wordsItem1_4))
-        excersises.add(GameTask("gardener","['gɑ:dnə]","",itemList,itemList.get(0)))
+        excersises.add(GameTask("gardener","['gɑ:dnə]",itemList,itemList.get(0)))
 
         itemList = ArrayList<String>()
         itemList.add(getString(R.string.wordsItem2_1))
         itemList.add(getString(R.string.wordsItem2_2))
         itemList.add(getString(R.string.wordsItem2_3))
         itemList.add(getString(R.string.wordsItem2_4))
-        excersises.add(GameTask("hunter","['hʌntə]","",itemList,itemList.get(2)))
+        excersises.add(GameTask("hunter","['hʌntə]",itemList,itemList.get(2)))
 
         itemList = ArrayList<String>()
         itemList.add(getString(R.string.wordsItem3_1))
         itemList.add(getString(R.string.wordsItem3_2))
         itemList.add(getString(R.string.wordsItem3_3))
         itemList.add(getString(R.string.wordsItem3_4))
-        excersises.add(GameTask("rapid","['ræpɪd]","",itemList,itemList.get(3)))
+        excersises.add(GameTask("rapid","['ræpɪd]",itemList,itemList.get(3)))
         number = Random.nextInt(from = 0, until = 3)
         word = findViewById(R.id.textWord) as TextView
         word.text = excersises.get(number).word
@@ -98,8 +98,21 @@ class GameActivity : AppCompatActivity() {
                         noSkip = noSkip || wordItem.isSelected
                     }
                     if (!noSkip) return
-
-                    itemsList.forEach { wordItem ->
+                    val words = mutableListOf<String>()
+                    itemsList.forEach {
+                        words.add(it.word)
+                    }
+                    var secondPlayer = 0
+                    if (Random.nextInt(100) < 20) {
+                        secondPlayer = words.indexOf(excersises.get(number).word)
+                    } else {
+                        val remainingIndices = words.indices.filter { words[it] != excersises.get(number).word }
+                        secondPlayer = remainingIndices[Random.nextInt(remainingIndices.size)]
+                    }
+                    itemsList.forEachIndexed { idx, wordItem ->
+                        if (secondPlayer == idx) {
+                            wordItem.isOpponentAnswer = true
+                        }
                         if (wordItem.word == excersises.get(number).correct) {
                             wordItem.isCorrect = true
                         }

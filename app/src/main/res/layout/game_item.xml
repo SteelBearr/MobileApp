@@ -27,6 +27,6 @@
         android:layout_marginStart="13dp"
         android:elevation="2dp"
         android:fontFamily="@font/fredoka_semibold"
-        android:text="123"
+        android:text=""
         android:textSize="20sp" />
 </RelativeLayout>

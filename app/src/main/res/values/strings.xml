@@ -85,4 +85,6 @@
     <string name="wordsItem3_2">Пантера</string>
     <string name="wordsItem3_3">Долгий</string>
     <string name="wordsItem3_4">Стремительный</string>
+    <string name="gameYou">You</string>
+    <string name="gameOpponent">P2</string>
 </resources>

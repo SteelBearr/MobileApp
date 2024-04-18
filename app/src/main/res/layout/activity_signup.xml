@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/accent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="@color/accent">
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="291dp"
+            android:layout_height="22dp"
+            android:layout_centerInParent="true"
+            android:text="@string/signupTitle"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/fredoka_regular"
+            android:textAlignment="center"/>
+        <ImageView
+            android:id="@+id/back"
+            android:src="@drawable/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/pageTitle" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorOnBackground">
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="263dp"
+            android:layout_height="28dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/fredoka_semibold"
+            android:text="@string/signupHeader"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textColor="?attr/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/textFName"
+            android:layout_width="327dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/header"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/fredoka_regular"
+            android:textSize="15sp"
+            android:textColor="@color/dark_light"
+            android:text="@string/signupFNameText" />
+
+        <android.widget.EditText
+            style="@style/activeTextBox"
+            android:id="@+id/editTextFName"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginEnd="24dp"
+            android:layout_below="@+id/textFName"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="24dp"
+            android:textSize="15sp"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""
+            android:hint="@string/signupFNamePlaceholder"
+            android:textColorHint="@color/q50"
+            android:fontFamily="@font/fredoka_regular"/>
+
+        <TextView
+            android:id="@+id/textLName"
+            android:layout_width="327dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/editTextFName"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/fredoka_regular"
+            android:textSize="15sp"
+            android:textColor="@color/dark_light"
+            android:text="@string/signupLNameText" />
+
+        <android.widget.EditText
+            style="@style/activeTextBox"
+            android:id="@+id/editTextLName"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@+id/textLName"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:textSize="15sp"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""
+            android:hint="@string/signupLNamePlaceholder"
+            android:textColorHint="@color/q50"
+            android:fontFamily="@font/fredoka_regular"/>
+
+        <TextView
+            android:id="@+id/textEmail"
+            android:layout_width="327dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/editTextLName"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/fredoka_regular"
+            android:textSize="15sp"
+            android:textColor="@color/dark_light"
+            android:text="@string/signupEmailText" />
+
+        <android.widget.EditText
+            style="@style/activeTextBox"
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@+id/textEmail"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+
+            android:textSize="15sp"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""
+            android:hint="@string/signupEmailPlaceholder"
+            android:textColorHint="@color/q50"
+            android:fontFamily="@font/fredoka_regular"/>
+
+
+        <android.widget.Button
+            android:id="@+id/button2"
+            style="@style/activeButton"
+            android:layout_width="327dp"
+            android:layout_height="56dp"
+            android:layout_below="@+id/editTextEmail"
+            android:layout_marginTop="34dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/signupButtonText"
+            android:fontFamily="@font/fredoka_medium"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="20dp"
+            android:layout_below="@+id/button2"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textMember"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:fontFamily="@font/fredoka_regular"
+                android:text="@string/signupMembershipText"
+                android:textColor="@color/q50"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:fontFamily="@font/fredoka_semibold"
+                android:text="@string/signupLoginText"
+                android:textColor="@color/active"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

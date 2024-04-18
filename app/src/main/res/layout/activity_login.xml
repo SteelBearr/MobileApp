@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/accent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="@color/accent">
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="291dp"
+            android:layout_height="22dp"
+            android:layout_centerInParent="true"
+            android:text="@string/loginTitle"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/fredoka_regular"
+            android:textAlignment="center"/>
+        <ImageView
+            android:id="@+id/back"
+            android:src="@drawable/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/pageTitle" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorOnBackground">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="105dp"
+            android:layout_height="82dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/login_image" />
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="263dp"
+            android:layout_height="56dp"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/fredoka_semibold"
+            android:text="@string/loginHeader"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textColor="?attr/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/textFName"
+            android:layout_width="327dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/header"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/fredoka_regular"
+            android:textSize="15sp"
+            android:textColor="@color/dark_light"
+            android:text="@string/loginEmailText" />
+
+        <android.widget.EditText
+            style="@style/activeTextBox"
+            android:id="@+id/editTextFName"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginEnd="24dp"
+            android:layout_below="@+id/textFName"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="24dp"
+            android:textSize="15sp"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""
+            android:hint="@string/loginEmailPlaceholder"
+            android:textColorHint="@color/q50"
+            android:fontFamily="@font/fredoka_regular"/>
+
+        <TextView
+
+            android:id="@+id/textLName"
+            android:layout_width="327dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/editTextFName"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/fredoka_regular"
+            android:textSize="15sp"
+            android:textColor="@color/dark_light"
+            android:text="@string/loginPasswordText" />
+
+        <android.widget.EditText
+            style="@style/activeTextBox"
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@+id/textLName"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:textSize="15sp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:text=""
+            android:hint="@string/loginPasswordPlaceholder"
+            android:textColorHint="@color/q50"
+            android:fontFamily="@font/fredoka_regular"/>
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="362dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginStart="330dp"
+            android:src="@drawable/eye" />
+        <TextView
+            android:id="@+id/textForgotPassword"
+            android:layout_width="327dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/editTextPassword"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/fredoka_regular"
+            android:textSize="15sp"
+            android:textColor="@color/caution"
+            android:text="@string/loginForgotPas" />
+
+        <android.widget.Button
+            android:id="@+id/button2"
+            style="@style/activeButton"
+            android:layout_width="327dp"
+            android:layout_height="56dp"
+            android:layout_below="@+id/editTextPassword"
+            android:layout_marginTop="64dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/loginButtonText"
+            android:fontFamily="@font/fredoka_medium"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="20dp"
+            android:layout_below="@+id/button2"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textMember"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:fontFamily="@font/fredoka_regular"
+                android:text="@string/loginMembershipText"
+                android:textColor="@color/q50"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:fontFamily="@font/fredoka_semibold"
+                android:text="@string/loginTextSignup"
+                android:textColor="@color/active"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="20dp"
+            android:layout_below="@+id/button2"
+            android:layout_marginTop="58dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textUse"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:fontFamily="@font/fredoka_regular"
+                android:text="@string/loginTextUse"
+                android:textColor="@color/q50"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textGoogle"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:fontFamily="@font/fredoka_semibold"
+                android:text="@string/loginTextGoogle"
+                android:textColor="@color/active"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textSign"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:fontFamily="@font/fredoka_regular"
+                android:text="@string/loginTextSignin"
+                android:textColor="@color/q50"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

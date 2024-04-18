@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/accent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupConfirmActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="@color/accent">
+        <ImageView
+            android:id="@+id/back"
+            android:src="@drawable/back_bold"
+            android:layout_width="17dp"
+            android:layout_height="27dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="24dp"/>
+
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="21dp"
+            android:layout_toEndOf="@+id/back"
+            android:fontFamily="@font/fredoka_medium"
+            android:text="@string/auditionTitle"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorOnBackground">
+
+        <TextView
+            android:id="@+id/textWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:fontFamily="@font/fredoka_semibold"
+            android:textSize="22sp"
+            android:textColor="?attr/colorPrimary"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textPronunciation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:fontFamily="@font/fredoka_medium"
+            android:textSize="15sp"
+            android:layout_below="@+id/textWord"
+            android:textColor="?attr/colorPrimary"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textHint"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/fredoka_medium"
+            android:layout_marginTop="68dp"
+            android:textSize="22sp"
+            android:layout_below="@+id/textPronunciation"
+            android:textColor="?attr/colorPrimary"
+            android:text="@string/auditionHint" />
+
+        <TextView
+            android:id="@+id/textHint2"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:fontFamily="@font/fredoka_regular"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:layout_below="@+id/textHint"
+            android:textColor="@color/q50"
+            android:text="@string/auditionResult" />
+
+        <android.widget.EditText
+            style="@style/activeTextBox"
+            android:id="@+id/editTextPronunciation"
+            android:layout_width="327dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="24dp"
+            android:layout_below="@+id/textHint2"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            android:ems="10"
+            android:textColor="@color/caution"
+            android:inputType="none"
+            android:text=""
+            android:textColorHint="@color/q50"
+            android:fontFamily="@font/fredoka_regular"/>
+
+        <ImageButton
+            style="@style/cyanButton"
+            android:id="@+id/buttonRetry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="25dp"
+            android:layout_below="@+id/editTextPronunciation"
+            android:layout_marginTop="182dp"
+            app:srcCompat="@drawable/mic" />
+
+
+    </RelativeLayout>
+</LinearLayout>

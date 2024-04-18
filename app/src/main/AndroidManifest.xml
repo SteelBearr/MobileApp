@@ -13,9 +13,69 @@
         android:theme="@style/Theme.LangLearn.Starting"
         tools:targetApi="31">
         <activity
-            android:name=".OnboardingActivity"
+            android:name=".GameActivity"
             android:exported="false"
             android:theme="@style/Theme.LangLearn"/>
+        <activity
+            android:name=".WordsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.LangLearn" />
+        <activity
+            android:name=".NoConnectionActivity"
+            android:exported="false"
+            android:theme="@style/Theme.LangLearn" />
+        <activity
+            android:name=".AuditionIncorrectActivity"
+            android:exported="false"
+            android:theme="@style/Theme.LangLearn" />
+        <activity
+            android:name=".AuditionCorrectActivity"
+            android:exported="false"
+            android:theme="@style/Theme.LangLearn" />
+        <activity
+            android:name=".AuditionActivity"
+            android:exported="false"
+            android:theme="@style/Theme.LangLearn" />
+        <activity
+            android:name=".AnimalsIncorrectActivity"
+            android:exported="false"
+            android:theme="@style/Theme.LangLearn" />
+        <activity
+            android:name=".AnimalsCorrectActivity"
+            android:exported="false"
+            android:theme="@style/Theme.LangLearn" />
+        <activity
+            android:name=".AnimalsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.LangLearn" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.LangLearn" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.LangLearn" />
+        <activity
+            android:name=".LanguageSelectorActivity"
+            android:exported="false"
+            android:theme="@style/Theme.LangLearn" />
+        <activity
+            android:name=".SignupConfirmActivity"
+            android:exported="false"
+            android:theme="@style/Theme.LangLearn" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false"
+            android:theme="@style/Theme.LangLearn" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.LangLearn" />
+        <activity
+            android:name=".OnboardingActivity"
+            android:exported="false"
+            android:theme="@style/Theme.LangLearn" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

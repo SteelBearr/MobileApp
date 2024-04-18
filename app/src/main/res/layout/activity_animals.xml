@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/accent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupConfirmActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="@color/accent">
+        <ImageView
+            android:id="@+id/back"
+            android:src="@drawable/back_bold"
+            android:layout_width="17dp"
+            android:layout_height="27dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="24dp"/>
+
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="291dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="21dp"
+            android:layout_toEndOf="@+id/back"
+            android:fontFamily="@font/fredoka_medium"
+            android:text="@string/animalTitle"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorOnBackground">
+        <ImageView
+            android:id="@+id/animalImage"
+            android:layout_width="328dp"
+            android:layout_height="328dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            />
+
+        <TextView
+            android:id="@+id/textHint"
+            android:layout_width="327dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/animalImage"
+            android:layout_marginTop="17dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/fredoka_regular"
+            android:textSize="15sp"
+            android:textColor="@color/q50"
+            android:text="@string/animalHeader" />
+
+        <android.widget.EditText
+            style="@style/activeTextBox"
+            android:id="@+id/editTextAnimal"
+            android:layout_width="327dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="24dp"
+            android:layout_below="@+id/textHint"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""
+            android:textColorHint="@color/q50"
+            android:fontFamily="@font/fredoka_regular"/>
+
+        <android.widget.Button
+            android:id="@+id/buttonCheck"
+            style="@style/activeButton"
+            android:layout_width="327dp"
+            android:layout_height="56dp"
+            android:layout_below="@+id/editTextAnimal"
+            android:layout_marginTop="17dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/animalCheck"
+            android:fontFamily="@font/fredoka_medium"/>
+
+    </RelativeLayout>
+</LinearLayout>

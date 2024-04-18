@@ -35,6 +35,7 @@ android {
     }
 }
 
+
 dependencies {
 
     implementation(libs.androidx.core.ktx)
@@ -47,5 +48,7 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     implementation("androidx.core:core-splashscreen:1.1.0-rc01")
     implementation("me.relex:circleindicator:2.1.6")
+    implementation("com.makeramen:roundedimageview:2.3.0")
+    implementation("com.squareup.picasso:picasso:2.8")
 
 }

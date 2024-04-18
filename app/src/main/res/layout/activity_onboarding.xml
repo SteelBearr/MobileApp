@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".OnboardingActivity"
+    android:background="?attr/colorOnBackground"
     android:orientation="vertical">
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/idViewPager"
@@ -24,7 +25,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
+    <android.widget.Button
         android:id="@+id/button"
         style="@style/activeButton"
         android:layout_width="327dp"

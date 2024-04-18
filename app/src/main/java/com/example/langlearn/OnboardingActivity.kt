@@ -1,18 +1,15 @@
 package com.example.langlearn
 
 import android.content.Context
+import android.content.Intent
 import android.content.SharedPreferences
 import android.content.SharedPreferences.Editor
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
 import android.widget.Button
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.viewpager.widget.ViewPager
 import me.relex.circleindicator.CircleIndicator
 
@@ -93,12 +90,32 @@ class OnboardingActivity : AppCompatActivity() {
         button.setOnClickListener(object : View.OnClickListener {
             override fun onClick(view: View) {
                 val pos = viewPager.currentItem + 1
-                viewPager.setCurrentItem(pos)
-                editor.putInt("screenId", pos)
-                editor.apply()
+                if (pos < 3) {
+                    viewPager.setCurrentItem(pos)
+                    editor.putInt("screenId", pos)
+                    editor.apply()
+                }
+                else {
+                    val intent = Intent(this@OnboardingActivity,LanguageSelectorActivity::class.java)
+                    editor.putInt("screenId", -1)
+                    editor.apply()
+                    startActivity(intent)
+                    finish()
+
+                }
 
             }
         })
+        viewText.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(view: View) {
+                val intent = Intent(this@OnboardingActivity,LanguageSelectorActivity::class.java)
+                editor.putInt("screenId", -1)
+                editor.apply()
+                startActivity(intent)
+                finish()
+            }
+        })
+
     }
 
 }

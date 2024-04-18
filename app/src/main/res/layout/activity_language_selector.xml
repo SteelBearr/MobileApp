@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LanguageSelectorActivity"
+    android:orientation="vertical"
+    android:background="@color/accent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="@color/accent">
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="291dp"
+            android:layout_height="22dp"
+            android:layout_centerInParent="true"
+            android:text="@string/languageSelectorTitle"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/fredoka_regular"
+            android:textAlignment="center"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/langLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorOnBackground">
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="333dp"
+            android:layout_height="28dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/fredoka_semibold"
+            android:textColor="?attr/colorPrimary"
+            android:text="@string/languageSelectorHeader"
+            android:textAlignment="center"
+            android:textSize="22sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_marginTop="16dp" />
+
+        <android.widget.Button
+            android:id="@+id/button2"
+            style="@style/activeButton"
+            android:layout_width="327dp"
+            android:layout_height="56dp"
+            android:layout_below="@+id/header"
+            android:layout_marginTop="588dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/languageSelectorButton"
+            android:fontFamily="@font/fredoka_medium"/>
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>

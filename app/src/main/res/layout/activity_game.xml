@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity"
+    android:orientation="vertical"
+    android:background="@color/accent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="@color/accent">
+        <ImageView
+            android:id="@+id/back"
+            android:src="@drawable/back_bold"
+            android:layout_width="17dp"
+            android:layout_height="27dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="24dp"/>
+
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="291dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="21dp"
+            android:layout_toEndOf="@+id/back"
+            android:fontFamily="@font/fredoka_medium"
+            android:text="@string/wordsTitle"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/langLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorOnBackground">
+        <TextView
+            android:id="@+id/textWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:fontFamily="@font/fredoka_semibold"
+            android:textSize="22sp"
+            android:textColor="?attr/colorPrimary"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textPronunciation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:fontFamily="@font/fredoka_medium"
+            android:textSize="15sp"
+            android:layout_below="@+id/textWord"
+            android:textColor="?attr/colorPrimary"
+            android:text="" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textPronunciation"
+            android:layout_marginTop="35dp" />
+
+        <android.widget.Button
+            android:id="@+id/button2"
+            style="@style/activeButton"
+            android:layout_width="327dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="637dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/fredoka_medium"
+            android:text="@string/wordsCheck" />
+
+    </RelativeLayout>
+</LinearLayout>

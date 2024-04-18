@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:background="@color/accent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="187dp"
+        android:background="@color/accent">
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="134dp"
+            android:layout_height="134dp"
+            android:layout_marginStart="24dp"/>
+
+        <TextView
+            android:id="@+id/greeting"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_below="@+id/profile_image"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/fredoka_semibold"
+            android:text="@string/profileHeader"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorOnBackground">
+
+        <android.widget.Button
+            android:id="@+id/themeButton"
+            style="@style/activeButton"
+            android:layout_width="327dp"
+            android:layout_height="56dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="297dp"
+            android:text="@string/profileTheme"
+            android:fontFamily="@font/fredoka_medium"/>
+
+        <android.widget.Button
+            android:id="@+id/languageButton"
+            style="@style/activeButton"
+            android:layout_width="327dp"
+            android:layout_height="56dp"
+            android:layout_below="@+id/themeButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/profileLanguage"
+            android:fontFamily="@font/fredoka_medium"/>
+
+        <android.widget.Button
+            android:id="@+id/imageButton"
+            style="@style/activeButton"
+            android:layout_width="327dp"
+            android:layout_height="56dp"
+            android:layout_below="@+id/languageButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/profileImage"
+            android:fontFamily="@font/fredoka_medium"/>
+
+        <android.widget.Button
+            android:id="@+id/logoutButton"
+            style="@style/inactiveButton"
+            android:layout_width="327dp"
+            android:layout_height="56dp"
+            android:layout_below="@+id/imageButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/fredoka_medium"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:text="@string/profileLogout"
+            />
+
+
+
+    </RelativeLayout>
+</LinearLayout>

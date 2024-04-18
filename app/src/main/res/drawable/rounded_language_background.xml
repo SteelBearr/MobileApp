@@ -1,0 +1,8 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/selected_btn" />
+    <item
+        android:drawable="@drawable/selectable_btn"/>
+</selector>

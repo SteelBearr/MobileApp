@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/caution"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupConfirmActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="@color/caution">
+        <ImageView
+            android:id="@+id/back"
+            android:src="@drawable/back_bold"
+            android:layout_width="17dp"
+            android:layout_height="27dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="24dp"/>
+
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="291dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="21dp"
+            android:layout_toEndOf="@+id/back"
+            android:fontFamily="@font/fredoka_medium"
+            android:text="@string/animalTitle"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorOnBackground">
+        <ImageView
+            android:id="@+id/animalImageCorrect"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="63dp"
+            android:src="@drawable/upset"
+            />
+
+        <TextView
+            android:id="@+id/textUpset"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_below="@+id/animalImageCorrect"
+            android:layout_marginTop="45dp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:fontFamily="@font/fredoka_semibold"
+            android:textSize="20sp"
+            android:textColor="?attr/colorPrimary"
+            android:text="@string/animalWrong" />
+        <TextView
+            android:id="@+id/textAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_below="@+id/textUpset"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:fontFamily="@font/fredoka_semibold"
+            android:textSize="20sp"
+            android:textColor="?attr/colorPrimary"
+            android:text="@string/animalAnswer" />
+
+
+        <android.widget.Button
+            android:id="@+id/buttonNext"
+            style="@style/activeButton"
+            android:layout_width="327dp"
+            android:layout_height="56dp"
+            android:layout_below="@+id/textAnswer"
+            android:layout_marginTop="18dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/animalNext"
+            android:fontFamily="@font/fredoka_medium"/>
+        <android.widget.Button
+            android:id="@+id/buttonTryAgain"
+            style="@style/activeButton"
+            android:layout_width="327dp"
+            android:layout_height="56dp"
+            android:layout_below="@+id/buttonNext"
+            android:layout_marginTop="11dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/animalAgain"
+            android:fontFamily="@font/fredoka_medium"/>
+
+    </RelativeLayout>
+</LinearLayout>

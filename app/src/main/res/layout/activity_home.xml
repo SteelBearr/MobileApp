@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:background="@color/accent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="131dp"
+        android:background="@color/accent">
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="24dp"/>
+
+        <TextView
+            android:id="@+id/greeting"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_below="@+id/profile_image"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/fredoka_semibold"
+            android:text="@string/homeGreeting"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_below="@+id/greeting"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/fredoka_regular"
+            android:text="@string/homeHeader"
+            android:textAlignment="center"
+            android:textColor="@color/accent_gray"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorOnBackground">
+
+        <TextView
+            android:id="@+id/topUsers"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="11dp"
+            android:fontFamily="@font/fredoka_semibold"
+            android:text="@string/homeTopUsers"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/top1"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_below="@+id/topUsers"
+            android:layout_marginTop="5dp">
+
+            <android.widget.Button
+                android:id="@+id/top1Padding"
+                style="@style/inactiveButton"
+                android:layout_width="327dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:paddingStart="77dp"
+                android:text=""
+                android:textAlignment="textStart"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/top1UserImage"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignTop="@+id/top1Padding"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="-77dp"
+                android:layout_toStartOf="@+id/top1Padding"
+                android:elevation="2dp"
+                android:src="@drawable/gogh"/>
+
+            <TextView
+                android:id="@+id/top1UserName"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/top1Padding"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="77dp"
+                android:elevation="2dp"
+                android:fontFamily="@font/fredoka_semibold"
+                android:text="Vincent Van Goh"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/top1UserScore"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_alignTop="@+id/top1Padding"
+                android:layout_alignEnd="@+id/top1Padding"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="13dp"
+                android:elevation="2dp"
+                android:fontFamily="@font/fredoka_semibold"
+                android:text="12 points"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/top2"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_below="@+id/top1"
+            android:layout_marginTop="10dp">
+
+            <android.widget.Button
+                android:id="@+id/top2Padding"
+                style="@style/inactiveButton"
+                android:layout_width="327dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:paddingStart="77dp"
+                android:text=""
+                android:textAlignment="textStart"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/top2UserImage"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignTop="@+id/top2Padding"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="-77dp"
+                android:layout_toStartOf="@+id/top2Padding"
+                android:elevation="2dp"
+                android:src="@drawable/mendeleev"/>
+
+            <TextView
+                android:id="@+id/top2UserName"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/top2Padding"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="77dp"
+                android:elevation="2dp"
+                android:fontFamily="@font/fredoka_semibold"
+                android:text="Dmitri Ivanovich Mendeleev"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/top2UserScore"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_alignTop="@+id/top2Padding"
+                android:layout_alignEnd="@+id/top2Padding"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="13dp"
+                android:elevation="2dp"
+                android:fontFamily="@font/fredoka_semibold"
+                android:text="10 points"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/top3"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_below="@+id/top2"
+            android:layout_marginTop="10dp">
+
+            <android.widget.Button
+                android:id="@+id/top3Padding"
+                style="@style/inactiveButton"
+                android:layout_width="327dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:paddingStart="77dp"
+                android:text=""
+                android:textAlignment="textStart"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/top3UserImage"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignTop="@+id/top3Padding"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="-77dp"
+                android:layout_toStartOf="@+id/top3Padding"
+                android:elevation="2dp"
+                android:src="@drawable/vlad"/>
+
+            <TextView
+                android:id="@+id/top3UserName"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/top3Padding"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="77dp"
+                android:elevation="2dp"
+                android:fontFamily="@font/fredoka_semibold"
+                android:text="Vlad Tepes "
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/top3UserScore"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_alignTop="@+id/top3Padding"
+                android:layout_alignEnd="@+id/top3Padding"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="13dp"
+                android:elevation="2dp"
+                android:fontFamily="@font/fredoka_semibold"
+                android:text="8 points"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/exercises"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_below="@+id/top3"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="11dp"
+            android:fontFamily="@font/fredoka_semibold"
+            android:text="@string/homeExcersises"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="20sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/animal"
+            android:layout_width="153dp"
+            android:layout_height="117dp"
+            android:layout_below="@+id/exercises"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="9dp">
+
+            <ImageButton
+                android:id="@+id/buttonAnimal"
+                style="@style/activeButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="28dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="89dp"
+                android:src="@drawable/animal" />
+
+            <TextView
+                android:id="@+id/textAnimal"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="89dp"
+                android:fontFamily="@font/fredoka_regular"
+                android:text="@string/homeGuessAnimal"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/words"
+            android:layout_width="153dp"
+            android:layout_height="117dp"
+            android:layout_below="@+id/exercises"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="9dp"
+            android:layout_toEndOf="@+id/animal">
+
+            <ImageButton
+                android:id="@+id/buttonWords"
+                style="@style/redButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="28dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:paddingTop="8dp"
+                android:src="@drawable/words" />
+
+            <TextView
+                android:id="@+id/textWords"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="89dp"
+                android:fontFamily="@font/fredoka_regular"
+                android:text="@string/homeWordPractice"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/audition"
+            android:layout_width="153dp"
+            android:layout_height="117dp"
+            android:layout_below="@+id/animal"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="17dp">
+
+            <ImageButton
+                android:id="@+id/buttonAudition"
+                style="@style/orangeButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="28dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="89dp"
+                android:src="@drawable/speaker" />
+
+            <TextView
+                android:id="@+id/textAudition"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="89dp"
+                android:fontFamily="@font/fredoka_regular"
+                android:text="@string/homeAudition"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/game"
+            android:layout_width="153dp"
+            android:layout_height="117dp"
+            android:layout_below="@+id/words"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="17dp"
+            android:layout_toEndOf="@+id/audition">
+
+            <ImageButton
+                android:id="@+id/buttonGame"
+                style="@style/greenButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="28dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="89dp"
+                android:src="@drawable/game" />
+
+            <TextView
+                android:id="@+id/textGame"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="89dp"
+                android:fontFamily="@font/fredoka_regular"
+                android:text="@string/homeGame"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

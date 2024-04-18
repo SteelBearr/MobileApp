@@ -6,13 +6,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/accent">
 
 
-    <TextView
-        android:id="@+id/textView"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="You are not suppoused to be here"
-        android:translationY="50sp" />
+        android:layout_height="78dp"
+        android:background="@color/accent">
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="291dp"
+            android:layout_height="22dp"
+            android:layout_centerInParent="true"
+            android:text="Screen Title"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/fredoka_semibold"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+    </RelativeLayout>
 </LinearLayout>

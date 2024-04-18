@@ -15,4 +15,10 @@
     <color name="light_text">#080E1E</color>
     <color name="dark_header">#FFFFFF</color>
     <color name="q60">#99080E1E</color>
+    <color name="dark_light">#363B44</color>
+    <color name="q50">#80656872</color>
+    <color name="q5">#0D080E1E</color>
+    <color name="q95">#0Df7f1e1</color>
+    <color name="accent_gray">#B6B6B6</color>
+    <color name="light_gray">#E5E5E5</color>
 </resources>

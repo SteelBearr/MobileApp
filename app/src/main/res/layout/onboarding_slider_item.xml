@@ -20,14 +20,14 @@
         android:layout_centerHorizontal="true"
         android:textSize="22sp"
         android:layout_marginTop="163dp"
-        android:textColor="@color/dark_background"
+        android:textColor="?attr/colorPrimary"
         android:textAlignment="center"
         android:fontFamily="@font/fredoka_semibold"
         android:text="" />
 
     <TextView
         android:id="@+id/text"
-        android:textColor="@color/q60"
+        android:textColor="@color/q50"
         android:layout_width="263dp"
         android:textSize="15sp"
         android:textAlignment="center"
